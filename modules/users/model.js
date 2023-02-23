@@ -2,10 +2,9 @@ const mongoose = require('mongoose');
 
 const UserSchema = {
 
-    email: String,
-    cpf: String,
+
+    usuario: String,
     senha: String,
-    telefone: String,
     codigo: String,
     tipo: {
         type: String,
