@@ -3,9 +3,9 @@ const mongoose = require('mongoose');
 const UserSchema = {
 
 
-    usuario: String,
-    senha: String,
-    codigo: String,
+    user: String,
+    sen: String,
+    cod: String,
     tipo: {
         type: String,
         enum: ['admin', 'user'],
