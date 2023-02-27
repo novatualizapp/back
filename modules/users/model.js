@@ -6,11 +6,6 @@ const UserSchema = {
     user: String,
     sen: String,
     cod: String,
-    tipo: {
-        type: String,
-        enum: ['admin', 'user'],
-        default: 'user'
-    },
     criado: {
         type: Date,
         default: Date.now()
