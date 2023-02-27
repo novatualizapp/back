@@ -10,7 +10,7 @@ const initialize = (app) => {
     app.post(USERS_URL, UserController.criarUsuario)
     app.patch(`${USERS_URL}/:id`, autenticarMid, UserController.atualizarUsuario)
     app.delete(`${USERS_URL}/:id`, UserController.deletarUsuario)
-    app.delete(`${USERS_URL}`, autenticarMid, UserController.deletarVariosUsuarios)
+    app.delete(`${USERS_URL}`, UserController.deletarVariosUsuarios)
 
     //LOGIN
     app.post(`${USERS_URL}/login`, UserController.loginPage)
